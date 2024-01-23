@@ -20,7 +20,7 @@ jobs:
           pip install -r requirements.txt
           
       - name: execute py script # run mothome.py
-        run: python main.py
+        run: python motorhome.py
           
       - name: commit and push files
         run: |
