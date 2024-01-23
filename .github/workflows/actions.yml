@@ -1,4 +1,5 @@
 name: run motorhome.py
+on: push
 
 jobs:
   build:
