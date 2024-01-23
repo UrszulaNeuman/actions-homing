@@ -1,1 +1,1 @@
-pmac_motorhome=1.5
+pmac_motorhome==1.5
