@@ -23,10 +23,7 @@ jobs:
       - name: execute py script # run mothome.py
         run: python motorhome.py
           
-      - name: commit and push files
-        run: |
-          git config --local user.name github-actions
-          git config --local user.email github-actions@github.com
-          git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
-          git push
+      - name upload artifacts
+        uses: actions/upload-artifact@v4
+        with: my-artifact
+          path: 'BL99I-MO-STEP-01/PMAC Script Language/PLC Programs'

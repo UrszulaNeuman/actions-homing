@@ -6,8 +6,7 @@ from pmac_motorhome.sequences import home_hsw, home_rlim
 with plc(
     plc_num=10,
     controller=ControllerType.pbrick,
-    filepath="PLC10_P2R_HM.pmc"
-    
+    filepath="BL99I-MO-STEP-01/PMAC Script Language/PLC Programs/PLC11_P2R_HM.pmc"
 ):
     with group(group_num=2):
         motor(axis=1, jdist=-1000, index=0)
