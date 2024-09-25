@@ -25,5 +25,6 @@ jobs:
           
       - name upload artifacts
         uses: actions/upload-artifact@v4
-        with: my-artifact
+        with: 
+          name: my-artifact
           path: 'BL99I-MO-STEP-01/PMAC Script Language/PLC Programs'
